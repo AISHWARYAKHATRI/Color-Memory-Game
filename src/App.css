@@ -1,0 +1,19 @@
+:root {
+  --primary: rgb(237, 58, 86);
+}
+
+* {
+  margin: 0;
+  font-family: "Roboto", "Courier New", Courier, monospace;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.pinkish-red {
+  color: var(--primary);
+}
