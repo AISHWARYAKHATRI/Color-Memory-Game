@@ -11,10 +11,15 @@ function App() {
     if (!Array.isArray(val)) setTotal(val);
   };
   return (
-    <div className="grid-container">
-      <Instructions value={total} onChange={onChange} />
-      <Game total={total} />
-    </div>
+    <>
+      <div className="grid-container">
+        <Instructions value={total} onChange={onChange} />
+        <Game total={total} />
+      </div>
+      <div className="footer">
+        Made with ❤️ and lots fun 😁 by Aishwarya Khatri 💻
+      </div>
+    </>
   );
 }
 

@@ -10,7 +10,7 @@ interface RangeSliderProps {
 const RangeSlider: React.FC<RangeSliderProps> = ({ value, onChange }) => {
   return (
     <>
-      <Slider value={value} min={4} max={32} step={4} onChange={onChange} />
+      <Slider value={value} min={4} max={24} step={4} onChange={onChange} />
       <p style={{ textAlign: "center", marginTop: "10px" }}>
         <strong>Boxes:</strong> {value}
       </p>

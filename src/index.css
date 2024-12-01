@@ -18,6 +18,8 @@
   grid-template-columns: 1fr 2fr;
   padding: 20px;
   gap: 2rem;
+  position: relative;
+  height: 100%;
 }
 
 .gameover-container,
@@ -52,11 +54,6 @@
   height: calc(100vh - 42px);
   grid-template-columns: repeat(4, 1fr);
   border-radius: 0.5rem;
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
-    rgba(251, 251, 251, 0.12) 0px -12px 30px,
-    rgba(255, 255, 255, 0.12) 0px 4px 6px,
-    rgba(255, 255, 255, 0.17) 0px 12px 13px,
-    rgba(255, 255, 255, 0.09) 0px -3px 5px;
 }
 
 .box {
@@ -66,11 +63,29 @@
   border: 1px solid #ccc;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  border-radius: 18px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 12px 55px;
+  /* rgba(251, 251, 251, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px; */
+}
+
+.footer {
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  min-height: 100%!important;
 }
 
 @media (max-width: 768px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 10px;
   }
 }

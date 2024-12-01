@@ -24,7 +24,7 @@ const Game = ({ total }: { total: number }) => {
    * Render the UI
    */
   useEffect(() => {
-    setBoxes(generateBoxes(total));
+    resetGame();
   }, [total]);
 
   const handleClick = (currentSelectedColor: string) => {
