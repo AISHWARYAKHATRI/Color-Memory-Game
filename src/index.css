@@ -73,13 +73,14 @@
 
 .footer {
   display: flex;
-  padding: 20px 0;
+  padding: 20px;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 canvas {
-  min-height: 100%!important;
+  min-height: 100% !important;
 }
 
 @media (max-width: 768px) {
